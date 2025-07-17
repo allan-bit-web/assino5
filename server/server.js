@@ -20,9 +20,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/api/auth", require("./Routes/authRoutes"));
-app.use("/api/rooms", require("./Routes/roomRoutes"));
-app.use("/api/messages", require("./Routes/messageRoutes"));
+app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/rooms", require("./routes/roomRoutes"));
+app.use("/api/messages", require("./routes/messageRoutes"));
 
 // DB & Start
 connectDB();
